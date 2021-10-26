@@ -40,10 +40,6 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
-
 subprojects {
     if (project.name == 'app') {
         apply plugin: 'com.android.application'
