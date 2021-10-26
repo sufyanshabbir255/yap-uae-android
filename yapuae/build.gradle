@@ -1,3 +1,5 @@
+group = "com.github.sufyanshabbir255"
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
