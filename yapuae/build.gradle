@@ -11,5 +11,5 @@ dependencies {
         add(it.configuration, it.dependency)
     }
 
-    implementation 'id.zelory:compressor:3.0.0'
+//    implementation 'id.zelory:compressor:3.0.0'
 }
