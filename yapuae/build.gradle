@@ -1,0 +1,15 @@
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Test dependencies
+    project.testDependencies.each {
+        add(it.configuration, it.dependency)
+    }
+
+    // app specific dependencies
+    project.yapDependencies.each {
+        add(it.configuration, it.dependency)
+    }
+
+    implementation 'id.zelory:compressor:3.0.0'
+}

@@ -1,0 +1,1 @@
+include ':app', ':yapcore', ':networking', ':translation', ':yapuae', ':identityscanner_v2', ':household', ':sendmoney', ':security' , ':qrcodereaderview', ':wallet'
