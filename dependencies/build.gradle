@@ -2,9 +2,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
-apply {
-    from "../uploadLibrary.gradle"
-}
+//apply {
+//    from "../uploadLibrary.gradle"
+//}
 project.ext {
     compileSdkVersion = 29
     minSdkVersion = 23
@@ -25,7 +25,7 @@ project.ext {
             app             : ':app',
             networking      : ':networking',
             translation     : ':translation',
-            yap             : ':yapuae',
+            yapuae             : ':yapuae',
             household       : ':household',
             yapcore         : ':yapcore',
             kyc             : ':identityscanner_v2',
@@ -217,7 +217,7 @@ project.ext {
             [configuration: "implementation", dependency: project(modules.translation)],
             [configuration: "implementation", dependency: project(modules.security)],
             [configuration: "implementation", dependency: project(modules.yapcore)],
-            [configuration: "implementation", dependency: project(modules.yap)],
+            [configuration: "implementation", dependency: project(modules.yapuae)],
             [configuration: "implementation", dependency: project(modules.household)],
             [configuration: "implementation", dependency: project(modules.networking)],
             [configuration: "implementation", dependency: project(modules.sendmoney)],
@@ -263,7 +263,7 @@ project.ext {
             [configuration: "implementation", dependency: project(modules.translation)],
             [configuration: "implementation", dependency: project(modules.networking)],
             [configuration: "implementation", dependency: project(modules.kyc)],
-            [configuration: "implementation", dependency: project(modules.yap)],
+            [configuration: "implementation", dependency: project(modules.yapuae)],
             [configuration: "implementation", dependency: libraries.playServicesPlaces],
             [configuration: "implementation", dependency: libraries.playLibPlaces],
             [configuration: "implementation", dependency: libraries.glideTransformation],
